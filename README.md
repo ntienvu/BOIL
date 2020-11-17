@@ -1,12 +1,3 @@
-This is the code for the NeurIPS submission, entitled "Bayesian Optimization for Iterative Learning"
-
-There is a iPython Notebook for the demo.
-
-For demo:
-	demo_BOIL_A2C_InvPendulum.py is for running BOIL on A2C with InvertedPendulum-v2
-	demo_BOIL_A2C_Reacher.py is for running BOIL on A2C with Reacher-v2
-	demo_BOIL_DDQN_CartPole_2D_for_plot.py is for running BOIL on DDQN with CartPole for plotting.
-
 # Bayesian Optimization for Iterative Learning (BOIL)
 Release code for NeurIPS2020 Bayesian Optimization for Iterative Learning
 
@@ -20,10 +11,10 @@ demo_plot_BOIL_2d.ipynb
 
 # Running the algorithms in tuning deep reinforcement learning algorithm
 ```
-demo_BOIL_A2C_Reacher.ipynb
-demo_BOIL_A2C_InvertedPendulum.ipynb
-demo_BOIL_DDQN_CartPole.ipynb
-```
+demo_BOIL_A2C_Reacher.ipynb 		... for running BOIL on A2C with Reacher-v2
+demo_BOIL_A2C_InvertedPendulum.ipynb	... for running BOIL on A2C with InvertedPendulum-v2
+demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
+
 
 
 # Dependencies
