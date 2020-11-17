@@ -14,7 +14,7 @@ demo_plot_BOIL_2d.ipynb
 demo_BOIL_A2C_Reacher.ipynb 		... for running BOIL on A2C with Reacher-v2
 demo_BOIL_A2C_InvertedPendulum.ipynb	... for running BOIL on A2C with InvertedPendulum-v2
 demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
-
+```
 
 
 # Dependencies
