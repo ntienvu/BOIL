@@ -324,7 +324,7 @@ class BOIL(object):
             # or stop augmenting if the uncertainty is smaller than a threshold
 
             log_cond=np.log( temp_gp.compute_condition_number() )
-            if log_cond>self.threshold_cond or pred_var_value[ii]<(self.gp.noise_delta+3e-3):
+            if log_cond>self.threshold_cond or pred_var_value[ii]<(self.gp.noise_delta+1e-3):
                 break
           
             if x_max_pred_variance[-1] in temp_T[-ii:]: # if repetition, stop augmenting
@@ -453,7 +453,7 @@ class BOIL(object):
             self.gp.logistic_hyper['growth']=new_growth
           
             if self.verbose:
-                print("==estimated lengthscale_x={:.4f} lengthscale_t={:.3f} Logistic midpoint={:.1f} Logistic growth={:.1f}".format(
+                print("==estimated lengthscale_x={:.4f}   lengthscale_t={:.3f}   Logistic_m0={:.1f}   Logistic_g0={:.1f}".format(
                     newlengthscale_x,newlengthscale_t,new_midpoint,new_growth))
                 
         # Set acquisition function

@@ -18,7 +18,7 @@ class ProductGaussianProcess(object):
     
     #def __init__ (self,param):
     def __init__ (self,SearchSpace,gp_hyper=None,logistic_hyper=None,verbose=0):
-        self.noise_delta=1e-4
+        self.noise_delta=5e-4
         self.noise_upperbound=1e-2
         self.mycov=self.cov_RBF_time
         self.SearchSpace=SearchSpace
@@ -255,11 +255,11 @@ class ProductGaussianProcess(object):
         """
         
         # define a bound on the lengthscale
-        SearchSpace_l_min=0.005
+        SearchSpace_l_min=0.03
         SearchSpace_l_max=0.3
         
-        SearchSpace_midpoint_min=-3
-        SearchSpace_midpoint_max=2
+        SearchSpace_midpoint_min=-2
+        SearchSpace_midpoint_max=3
         
         SearchSpace_growth_min=0.5
         SearchSpace_growth_max=2
