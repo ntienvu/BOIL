@@ -95,10 +95,6 @@ class DRL_experiment:
 
         session.run(init)
         ag.set_session(session)
-
-        if 'monitor' in sys.argv:
-            filename = os.path.basename(__file__).split('.')[0]
-            env = wrappers.Monitor(env, filename)
             
         N = int(ag.params['maxEpisodes'])
         totalrewards = np.empty(N)
@@ -108,5 +104,6 @@ class DRL_experiment:
             totalrewards[e], t = ag.nextEpisode(env, t, display=display)
         end_time = time.time()
         elapse = end_time-start_time
+        env.close()
         session.close()
         return totalrewards, elapse
