@@ -73,7 +73,6 @@ class RL_alg:
         pass
 
     def nextEpisode(self, env, time, display=False):
-        observation = env.reset()
         """ if display and not:
             plt.clf()
             plt.imshow(env.render(mode='rgb_array'))
@@ -85,6 +84,7 @@ class RL_alg:
         if display:
             from gym.wrappers import Monitor
             env = Monitor(env, './video', force=True)
+        observation = env.reset()
         totalreward = 0
         last_step = time_mod.time()
         for t in range(time, time + self.params["maxSteps"]):
