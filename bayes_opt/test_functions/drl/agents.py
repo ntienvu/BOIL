@@ -81,9 +81,6 @@ class RL_alg:
             from IPython import display as dsp
             plt.figure(100)
             img = plt.imshow(env.render(mode='rgb_array'))"""
-        if display:
-            from gym.wrappers import Monitor
-            env = Monitor(env, './video', force=True)
         observation = env.reset()
         totalreward = 0
         last_step = time_mod.time()
