@@ -73,11 +73,11 @@ class RL_alg:
         pass
 
     def nextEpisode(self, env, time, display=False):
+        observation = env.reset()
         if display:
             from IPython import display as dsp
             plt.figure(100)
             img = plt.imshow(env.render(mode='rgb_array'))
-        observation = env.reset()
         totalreward = 0
         last_step = time_mod.time()
         for t in range(time, time + self.params["maxSteps"]):
