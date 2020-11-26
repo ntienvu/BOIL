@@ -100,7 +100,7 @@ class DRL_experiment:
         totalrewards = np.empty(N)
         
         t = 0
-        if display and issubclass(type(env),  gym.envs.mujoco.mujoco_env.MujocoEnv):
+        if display and issubclass(type(env.unwrapped),  gym.envs.mujoco.mujoco_env.MujocoEnv):
             print("Rendering this environment is not supported"
                   "- try to execute with display=False to get simulation outcomes")
             return
