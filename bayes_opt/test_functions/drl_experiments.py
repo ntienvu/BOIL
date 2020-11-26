@@ -100,16 +100,11 @@ class DRL_experiment:
         totalrewards = np.empty(N)
         
         t = 0
-        if display:
-            try:
-                from IPython import display as dsp
-                import matplotlib.pyplot as plt
-                plt.figure(100)
-                img = plt.imshow(env.render(mode='rgb_array'))
-            except:
-                print("Rendering this environment is not supported"
-                      "- try to execute with display=False to get simulation outcomes")
-                return
+        if display and issubclass(type(env),  gym.envs.mujoco.mujoco_env.MujocoEnv):
+            print("Rendering this environment is not supported"
+                  "- try to execute with display=False to get simulation outcomes")
+            return
+
         for e in range(N):
             totalrewards[e], t = ag.nextEpisode(env, t, display=display)
         end_time = time.time()
