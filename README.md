@@ -32,5 +32,5 @@ Visit https://papers.nips.cc/paper/2020/file/69eba34671b3ef1ef38ee85caae6b2a1-Pa
 
 # Reference
 ```
-Vu Nguyen, Sebastian Schulze, Michael A. Osborne.  "Bayesian Optimization for Iterative Learning." Advances in Neural Information Processing Systems (NeurIPS)	, 2020.
+Vu Nguyen, Sebastian Schulze, Michael A. Osborne.  "Bayesian Optimization for Iterative Learning." Advances in Neural Information Processing Systems (NeurIPS), 2020.
 ```
