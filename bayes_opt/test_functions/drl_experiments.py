@@ -77,9 +77,6 @@ class DRL_experiment:
             env = env.unwrapped
         if self.env == "Taxi-v2":
             env = TaxiWrapper(env)
-        if display:
-            from gym.wrappers import Monitor
-            env = Monitor(env, './video', force=True)
         tf.random.set_seed(run_seed)
         ag.initialise(copy.copy(env.observation_space), copy.copy(env.action_space))
         # tf.set_random_seed(run_seed)

@@ -73,14 +73,10 @@ class RL_alg:
         pass
 
     def nextEpisode(self, env, time, display=False):
-        """ if display and not:
-            plt.clf()
-            plt.imshow(env.render(mode='rgb_array'))
-            plt.pause(0.001)  # pause for plots to update
         if display:
             from IPython import display as dsp
             plt.figure(100)
-            img = plt.imshow(env.render(mode='rgb_array'))"""
+            img = plt.imshow(env.render(mode='rgb_array'))
         observation = env.reset()
         totalreward = 0
         last_step = time_mod.time()
@@ -92,15 +88,10 @@ class RL_alg:
             observation, reward, done, _ = env.step(action)
             last_step = time_mod.time()
             totalreward += reward
-            """if display:
-                plt.figure(100)
-                plt.clf()
-                plt.imshow(env.render(mode='rgb_array'))
-                plt.pause(0.001)  # pause for plots to update 
             if display:
                 img.set_data(env.render(mode='rgb_array'))  # just update the data
                 dsp.display(plt.gcf())
-                dsp.clear_output(wait=True) """
+                dsp.clear_output(wait=True)
             experience = (prev_obs, action, reward, observation, done)
             self.train(experience, t)
             if done:
