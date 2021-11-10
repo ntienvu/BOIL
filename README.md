@@ -1,7 +1,16 @@
-# Bayesian Optimization for Iterative Learning (BOIL)
-Release code for NeurIPS2020 Bayesian Optimization for Iterative Learning
+<div align="center">
 
-Copyright by the authors.
+# Bayesian Optimization for Iterative Learning (BOIL)
+
+
+[![Paper](http://img.shields.io/badge/paper-arxiv.2006.07593-B31B1B.svg)](https://arxiv.org/abs/2006.07593)
+[![Conference](https://icml.cc/static/core/img/ICML-logo.svg)](https://nips.cc/)
+</div>
+
+
+# Introduction
+The performance of deep (reinforcement) learning systems crucially depends on the choice of hyperparameters. Their tuning is notoriously expensive, typically requiring an iterative training process to run for numerous steps to convergence. Traditional tuning algorithms only consider the final performance of hyperparameters acquired after many expensive iterations and ignore intermediate information from earlier training steps. In this paper, we present a Bayesian optimization (BO) approach which exploits the iterative structure of learning algorithms for efficient hyperparameter tuning. We propose to learn an evaluation function compressing learning progress at any stage of the training process into a single numeric score according to both training success and stability. Our BO framework is then balancing the benefit of assessing a hyperparameter setting over additional training steps against their computation cost. We further increase model efficiency by selectively including scores from different training steps for any evaluated hyperparameter set. We demonstrate the efficiency of our algorithm by tuning hyperparameters for the training of deep reinforcement learning agents and convolutional
+neural networks. Our algorithm outperforms all existing baselines in identifying optimal hyperparameters in minimal time.
 
 
 # Visualization
