@@ -4,7 +4,7 @@
 
 
 [![Paper](http://img.shields.io/badge/paper-arxiv.2006.07593-B31B1B.svg)](https://arxiv.org/pdf/1909.09593.pdf)
-[![Conference](https://www.google.com/url?sa=i&url=https%3A%2F%2Fnips.cc%2FConferences%2F2021%2FPress&psig=AOvVaw0SA0VArtiHNoAnhL-4nZYP&ust=1636609840211000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOjf9vOMjfQCFQAAAAAdAAAAABAJ)](https://nips.cc/)
+[![Conference](https://oatml.cs.ox.ac.uk//images/neurips.png)](https://nips.cc/)
 </div>
 
 
