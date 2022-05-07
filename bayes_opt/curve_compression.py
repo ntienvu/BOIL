@@ -153,7 +153,8 @@ def apply_one_transform_logistic(curve, midpoint=-2, growth=1,MaxEpisode=1000,Is
     def logistic_func(x):
         return 1.0/(1+np.exp(-growth*(x-midpoint)))
 	
-    my_xrange_scaled=np.linspace(-6,6, MaxEpisode)
+    #print(MaxEpisode)
+    my_xrange_scaled=np.linspace(-6,6, int(MaxEpisode))
 
     my_logistic_value_scaled=logistic_func(my_xrange_scaled)
 
