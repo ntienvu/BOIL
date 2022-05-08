@@ -16,6 +16,7 @@ setup(
         "gym>=0.5",
         "sobol-seq>=0.2.0",
         "tensorflow-probability==0.16.0",
-        "tqdm>=4.64.0"
+        "tqdm>=4.64.0",
+        "pygame>=2.1.0"
     ],
 )
