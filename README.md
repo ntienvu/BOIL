@@ -41,8 +41,10 @@ demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
 
 
 # Paper and Presentation
+```
 Visit https://papers.nips.cc/paper/2020/file/69eba34671b3ef1ef38ee85caae6b2a1-Paper.pdf
-
+Video at Slideslive  https://slideslive.com/38936372/bayesian-optimization-for-iterative-learning?ref=search-presentations-bayesian+optimization+iterative+learning
+```
 
 # Reference
 ```
