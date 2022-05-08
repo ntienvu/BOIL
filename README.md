@@ -27,6 +27,7 @@ demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
 
 
 # Dependencies
+```
 * numpy >= 1.10.0
 * scipy==1.4.1
 * matplotlib>=3.1.0
@@ -38,13 +39,13 @@ demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
 * tqdm>=4.64.0
 * tabulate>=0.8.7
 * mujoco (optional)
-
+```
 
 # Paper and Presentation
-```
-Visit https://papers.nips.cc/paper/2020/file/69eba34671b3ef1ef38ee85caae6b2a1-Paper.pdf
-Video at Slideslive  https://slideslive.com/38936372/bayesian-optimization-for-iterative-learning?ref=search-presentations-bayesian+optimization+iterative+learning
-```
+
+Visit [PDF](https://papers.nips.cc/paper/2020/file/69eba34671b3ef1ef38ee85caae6b2a1-Paper.pdf)
+Video at [Slideslive](https://slideslive.com/38936372/bayesian-optimization-for-iterative-learning?ref=search-presentations-bayesian+optimization+iterative+learning)
+
 
 # Reference
 ```
