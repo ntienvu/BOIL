@@ -25,11 +25,16 @@ demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
 
 
 # Dependencies
-* numpy
-* scipy
-* matplotlib
-* tensorflow
-* scikit-learn
+* numpy >= 1.10.0
+* scipy==1.4.1
+* matplotlib>=3.1.0
+* tensorflow==2.8.0
+* tensorflow-probability==0.16.0
+* sobol-seq>=0.2.0
+* gym>=0.5
+* scikit-learn >= 1.0.2
+* tqdm>=4.64.0
+* tabulate>=0.8.7
 * mujoco (optional)
 
 

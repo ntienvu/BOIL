@@ -175,7 +175,7 @@ class BOIL(object):
         # Evaluate target function at all initialization           
         y_init_curves, y_init_cost=self.f(init_X)
 
-        y_init_cost=np.atleast_2d(np.asarray(y_init_cost)).astype('Float64')
+        y_init_cost=np.atleast_2d(np.asarray(y_init_cost))#.astype('Float64')
 
         self.Y_curves+=y_init_curves
 
