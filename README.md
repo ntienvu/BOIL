@@ -15,6 +15,7 @@ neural networks. Our algorithm outperforms all existing baselines in identifying
 ```
 demo_plot_BOIL_2d.ipynb
 ```
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1npEC6F7tjGXiW5nrc7qEc68PNAWf2QQd#scrollTo=t9JbeFHQA7gj)
 
 # Running the algorithms in tuning deep reinforcement learning algorithm
 ```
@@ -22,6 +23,7 @@ demo_BOIL_A2C_Reacher.ipynb 		... for running BOIL on A2C with Reacher-v2
 demo_BOIL_A2C_InvertedPendulum.ipynb	... for running BOIL on A2C with InvertedPendulum-v2
 demo_BOIL_DDQN_CartPole.ipynb		... for running BOIL on DDQN with CartPole-v0
 ```
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wcyCSDhoVGh_AcX3FJRj6gFrk55C9LnO#scrollTo=HGCZqXSvQGIP)
 
 
 # Dependencies
