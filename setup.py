@@ -8,7 +8,7 @@ setup(
     description='BOIL',
     install_requires=[
         "numpy >= 1.10.0",
-        "scipy == 1.4.1",
+        "scipy >= 1.4.1",
         "scikit-learn >= 1.0.2",
         "tabulate>=0.8.7",
         "matplotlib>=3.1.0",
