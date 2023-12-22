@@ -72,7 +72,7 @@ class DRL_experiment:
         run_seed = np.random.randint(0, 100000)
         # tf.reset_default_graph()
         env = gym.make(self.env)
-        env.seed(run_seed)
+        #env.seed(run_seed)
         if unwrap:
             env = env.unwrapped
         if self.env == "Taxi-v2":
