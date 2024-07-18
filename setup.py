@@ -7,7 +7,7 @@ setup(
     include_package_data = True,
     description='BOIL',
     install_requires=[
-        "numpy >= 1.10.0",
+        "numpy == 1.23",
         "scipy >= 1.4.1",
         "scikit-learn >= 1.0.2",
         "tabulate>=0.8.7",
